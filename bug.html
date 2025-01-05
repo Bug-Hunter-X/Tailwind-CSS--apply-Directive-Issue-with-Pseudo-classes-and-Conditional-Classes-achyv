@@ -1,0 +1,1 @@
+This bug occurs when using Tailwind CSS's `@apply` directive with a pseudo-class selector like `:hover`.  The `@apply` directive doesn't correctly apply styles to the pseudo-class when used within a class that itself is conditionally applied. For example, if you have a class that's only added when a state changes (e.g., using JavaScript) then the hover styles won't be applied.
