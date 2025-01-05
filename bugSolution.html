@@ -1,0 +1,7 @@
+To solve this, avoid using `@apply` with pseudo-classes inside a conditionally applied class. Apply styles directly or use a JavaScript approach to add or remove classes with the complete styles. For example:
+
+```html
+<button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" id="myButton">Click Me</button>
+```
+
+In this solution, we are applying the hover styles directly to the button element without using the @apply directive.  This ensures the styles are applied correctly regardless of how the class is applied.
